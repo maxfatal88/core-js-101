@@ -53,7 +53,6 @@ function getCircleCircumference(radius) {
  */
 function getAverage(value1, value2) {
   // throw new Error('Not implemented');
-  console.log(value1);
   // eslint-disable-next-line no-undef
   return (BigInt(value1) + BigInt(value2)) / BigInt(2);
 }
