@@ -52,7 +52,7 @@ function getCircleCircumference(radius) {
  *  -3, 3  => 0
  */
 function getAverage(value1, value2) {
-  // throw new Error('Not implemented');
+  // throw new Error('Not implemented');gi
   // eslint-disable-next-line no-undef
   return (BigInt(value1) + BigInt(value2)) / BigInt(2);
 }
@@ -187,6 +187,15 @@ function getParallelepipedDiagonal(a, b, c) {
  */
 function roundToPowerOfTen(/* num, pow */) {
   throw new Error('Not implemented');
+  // console.log(num, pow);
+  // console.log(num.toString().slice(0, -pow));
+  // if (pow) {
+  //   const tempNum = num.toString().slice(0, -pow);
+  //   if (tempNum[tempNum.length - 1] > 4) {
+  //     console.log(tempNum[tempNum.length - 1]);
+  //   }
+  // }
+  // return num;
 }
 
 /**
@@ -206,9 +215,22 @@ function roundToPowerOfTen(/* num, pow */) {
  *   16 => false
  *   17 => true
  */
-function isPrime(/* n */) {
-  throw new Error('Not implemented');
+function isPrime(n) {
+  // throw new Error('Not implemented');
+  if (n === 1) {
+    return false;
+  }
+  if (n === 2) {
+    return true;
+  }
+  for (let x = 2; x < n; x += 1) {
+    if (n % x === 0) {
+      return false;
+    }
+  }
+  return true;
 }
+
 
 /**
  * Tries to convert value to number and returns it if conversion was successful;
@@ -227,6 +249,14 @@ function isPrime(/* n */) {
  */
 function toNumber(/* value, def */) {
   throw new Error('Not implemented');
+  // console.log(typeof Number(value));
+  // // eslint-disable-next-line use-isnan
+  // console.log(Number(value) === 'number');
+  // // eslint-disable-next-line use-isnan
+  // if ((+value) === NaN && typeof Number(value) === 'number') {
+  //   return +value;
+  // }
+  // return def;
 }
 
 module.exports = {
