@@ -54,6 +54,10 @@ function getJSON(obj) {
  */
 function fromJSON(/* proto, json */) {
   throw new Error('Not implemented');
+  // eslint-disable-next-line new-cap
+  // console.log(Object.keys(proto));
+
+  // console.log(...Object.values(JSON.parse(json)));
   // eslint-disable-next-line no-return-assign, no-param-reassign
   // return JSON.parse(json);
 }
